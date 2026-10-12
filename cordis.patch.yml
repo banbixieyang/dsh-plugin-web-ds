@@ -1,0 +1,15 @@
+- insert:
+    - id: dsh-plugin-web-ds
+      name: 'dsh-plugin-web-ds'
+      config:
+        # ↓ 改成你自己的 ds_read.py 绝对路径
+        dsReadScript: 'C:/path/to/SKILL_web-ds-read/scripts/ds_read.py'
+        sendScript: 'scripts/send_to_ds.py'
+        # ↓ 改成你自己的 Python 解释器绝对路径
+        pythonCommand: 'C:/path/to/python.exe'
+        pollIntervalMs: 3000
+        replyTimeoutMs: 240000
+        stableReadsRequired: 4
+        approvalEnabled: true
+        qqEnabled: false
+        qqConfig: {}
